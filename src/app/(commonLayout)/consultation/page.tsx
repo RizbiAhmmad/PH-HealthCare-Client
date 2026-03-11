@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ConsultationPage() {
+const ConsultationPage=()=> {
   return (
     <div>
       ConsultationPage

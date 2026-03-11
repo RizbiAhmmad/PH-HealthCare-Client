@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ConsultationDoctorByIdPage() {
+const ConsultationDoctorByIdPage=()=> {
   return (
     <div>
       ConsultationDoctorByIdPage

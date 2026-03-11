@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NGOsPage() {
+const NGOsPage=()=> {
   return (
     <div>
       NGOsPage

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ResetPasswordPage() {
+const ResetPasswordPage = () => {
   return (
     <div>
       ResetPasswordPage

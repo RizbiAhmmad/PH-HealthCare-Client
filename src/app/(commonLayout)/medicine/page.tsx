@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MedicinePage() {
+const MedicinePage=()=> {
   return (
     <div>
       MedicinePage

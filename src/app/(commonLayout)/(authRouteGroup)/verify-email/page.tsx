@@ -1,6 +1,6 @@
 import React from 'react'
 
-function VerifyEmailPage() {
+const VerifyEmailPage=()=> {
   return (
     <div>
       VerifyEmailPage

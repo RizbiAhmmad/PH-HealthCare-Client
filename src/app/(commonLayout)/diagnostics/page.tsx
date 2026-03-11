@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DiagonsticsPage() {
+const DiagonsticsPage=()=> {
   return (
     <div>
       DiagonsticsPage

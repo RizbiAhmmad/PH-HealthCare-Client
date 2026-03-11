@@ -1,6 +1,6 @@
 import React from 'react'
 
-function HealthPlanPage() {
+const HealthPlanPage =()=> {
   return (
     <div>
       HealthPlanPage
