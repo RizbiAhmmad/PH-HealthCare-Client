@@ -131,9 +131,9 @@ export interface IDoctorAppointmentItem {
     } | null;
 }
 
-// export interface IDoctorDetails extends IDoctor {
-//     user: IDoctorUserDetails;
-//     appointments?: IDoctorAppointmentItem[];
-//     doctorSchedules?: IDoctorScheduleItem[];
-//     reviews?: IDoctorReview[];
-// }
+export interface IDoctorDetails extends IDoctor {
+    user: IDoctorUserDetails;
+    appointments?: IDoctorAppointmentItem[];
+    doctorSchedules?: IDoctorScheduleItem[];
+    reviews?: IDoctorReview[];
+}
