@@ -133,12 +133,55 @@ const LoginForm = ({ redirectPath }: LoginFormProps) => {
             selector={(s) => [s.canSubmit, s.isSubmitting] as const}
           >
             {([canSubmit, isSubmitting]) => (
-              <AppSubmitButton isPending={isSubmitting || isPending} pendingLabel="Logging In...." disabled={!canSubmit}>
+              <AppSubmitButton isPending={isPending || isPending} pendingLabel="Logging In...." disabled={!canSubmit}>
                 Log In
               </AppSubmitButton>
             )}
           </form.Subscribe>
         </form>
+
+        {/* Quick Login Buttons for Testing */}
+        <div className="mt-6 space-y-2">
+          <p className="text-xs text-center text-muted-foreground mb-2">Quick Login (For Testing)</p>
+          <div className="grid grid-cols-3 gap-2">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="text-xs"
+              onClick={() => {
+                form.setFieldValue("email", "superadmin@gmail.com");
+                form.setFieldValue("password", "password123");
+                form.handleSubmit();
+              }}
+            >
+              Super Admin
+            </Button>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="text-xs"
+              onClick={() => {
+                form.setFieldValue("email", "doctor@gmail.com");
+                form.setFieldValue("password", "password123");
+                form.handleSubmit();
+              }}
+            >
+              Doctor
+            </Button>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="text-xs"
+              onClick={() => {
+                form.setFieldValue("email", "patient@gmail.com");
+                form.setFieldValue("password", "password123");
+                form.handleSubmit();
+              }}
+            >
+              Patient
+            </Button>
+          </div>
+        </div>
 
         <div className="relative my-6">
           <div className="absolute inset-0 flex items-center">
